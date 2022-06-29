@@ -1,3 +1,5 @@
+repeat wait() until game:IsLoaded()
+
 -- TWEEN
 
 local function tween(obj,info,goal)
@@ -372,7 +374,7 @@ if (stop ~= true) then
 			PARENT:Destroy()
 		end
 
-		wait(0.5)
+		wait(1)
 		SOUND1:Destroy()
 		SOUND2:Destroy()
 		SOUND3:Destroy()
